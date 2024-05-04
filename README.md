@@ -1,1 +1,36 @@
 # Homework
+
+The landing page design for the perfume website focuses on elegance, sophistication, and user-friendliness. 
+Here's a breakdown of the design choices:
+
+ 1-Color Scheme: The color palette predominantly consists of shades of purple (#63275c) combined with white 
+ and hints of light pink. Purple is often associated with luxury, creativity, and elegance, which aligns well 
+ with the theme of fragrances.
+
+ 2-Typography: The "Pacifico" font was chosen for the brand name in the navbar and footer, adding a touch of 
+ whimsy and elegance. The rest of the text uses default sans-serif fonts, ensuring readability and simplicity.
+
+ 3-Navbar: The navbar has a fixed-top position for easy navigation. It incorporates the brand logo along with
+  clear navigation links, ensuring accessibility to different sections of the website (local links).
+
+ 4-Hero Section: The hero section features a captivating background image with overlay text. The background 
+ image conveys the essence of luxury and beauty associated with fragrances. The overlay text is placed to the 
+ left, allowing ample space for the image to be shown.
+
+ 5-Buttons: The call-to-action (CTA) button in the hero section and the "Shop Now" buttons under each product 
+ card have a consistent design. They feature bold text, uppercase styling, and a hover effect, encouraging 
+ users to take action.
+
+ 6-Product Display: Products are showcased in a grid layout under different fragrance categories. Each product 
+ card includes an image, product details, and a "Shop Now" button. Hover effects are applied to the product 
+ images for interactivity.
+
+ 7-Responsive Design: Media queries are used to ensure that the layout adapts well to different screen sizes. 
+ The design remains visually appealing and functional across various devices, including mobile phones, 
+ as shown in the screenshots.
+
+ 8-Footer: The footer section includes essential information such as the brand name, social media links, and 
+ legal links. It maintains the color scheme and typography consistency seen throughout the website.
+
+Overall, the design choices aim to create a visually appealing and user-friendly experience for visitors 
+interested in exploring and purchasing fragrances from our website.
