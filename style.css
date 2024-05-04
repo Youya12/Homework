@@ -1,0 +1,222 @@
+#translatedSection{
+	display: none;
+}
+#mybut, #language{
+	background-color: transparent;
+	border: none;
+}
+#mysecondbut{
+	display: none;
+	background-color: transparent;
+	border: none;
+}
+p{
+	text-align: justify;
+}
+span{
+	color: #63275c;
+}
+a{
+    text-decoration: none;
+}
+/* NAVBAR Section */
+.navbar-custom {
+	background-color: #63275c;
+}
+.navbar-brand{
+	font-family: "Pacifico";
+	margin-left: 10px;
+}
+.navbar-nav{
+	font-weight: bold;
+}
+/* END NAVBAR Section */
+
+/* Hero Section */
+ #hero{
+	margin: 0;
+    padding: 0;
+	background-size: cover;
+    display: flex;
+    align-items: center;
+    max-width: 100vw;
+    height: 685px;
+  }
+  .texttoshow{
+	color: rgb(255, 255, 255);
+	margin-left: 50px;
+  }
+  #mySwitch {
+	margin: 0;
+    padding: 0;
+    display: flex;
+    position: relative;
+	max-width: 100%;
+}
+#lefty, #righty {
+	background: none;
+    border: none;
+    position: absolute;
+}
+#lefty {
+    right: 0%;
+}
+#righty {
+    left: 0%;
+}
+.cta {
+	text-shadow: none;
+	font-weight: bold;
+	display: inline-block;
+	padding: 10px 30px;
+	color: rgb(242, 220, 250);
+	background-color: #63275c;
+	border: 2px solid #63275c;
+	font-size: 24px;
+	text-transform: uppercase;
+	letter-spacing: 1.6px;
+	margin-top: 30px;
+}
+.cta:hover {
+	color: #63275c;
+	background-color: rgb(242, 220, 250);
+	border: rgb(242, 220, 250);
+}
+/* End Hero Section */
+
+/* Categories Section */
+.overview{
+	margin-top: 100px;
+	margin-bottom: 100px;
+}
+.overview img{
+		width: 100%;
+		max-width: auto;
+		height: auto;
+		border-radius: 5px;
+	}
+	.overview img:hover{
+		transform: scale(1.3);
+	}
+/* End of categories Section */
+
+/* Products Section */
+.products .row{
+	margin-top: 50px;
+}
+.products{
+	margin-top: 100px;
+	margin-bottom: 100px;
+}
+.row h3{
+	text-align: center;
+}
+.card{
+	margin-left: 40px;
+	margin-top: 50px;
+}
+.btn{
+	color: rgb(242, 220, 250);
+	background-color: #63275c;
+	border: none;
+}
+.btn:hover{
+	color: #63275c;
+	background-color:rgb(242, 220, 250);
+	border: #63275c;
+}
+.btn:active{
+	color: #63275c !important;
+	background-color:rgb(242, 220, 250) !important;
+	border: #63275c !important;
+}
+.card-img-top {
+    height: 400px;
+    object-fit: cover;
+}
+.card-img-top:hover {
+	transform: scale(1.3);
+}
+
+/* End of Products Section */
+
+/* Contact Section */
+.contact {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	align-items: center;
+	margin-bottom: 100px;
+}
+.contact p {
+	text-align: center;
+}
+.form-control {
+    height: 40px;
+}
+.contact .btn {
+    height: 40px;
+}
+/* End of contact section */
+
+/*FOOTER SECTION*/
+#footer {
+	margin-top: 150px;
+	
+	background-color: #63275c;
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+  }
+  #footer a{
+	text-decoration: none;
+	color: white !important;
+  }
+  #footer .footer {
+	  min-height: 150px;
+	  flex-direction: column;
+	  padding-top: 10px;
+	  padding-bottom: 10px;
+  }
+  #footer h2 {
+	font-family: "Pacifico";
+	  color: white;
+	  font-weight: 500;
+	  font-size: 28px;
+	  letter-spacing: 1.6px;
+	  margin-top: 10px;
+	  margin-bottom: 10px;
+  }
+  #footer .social-icon {
+	justify-content: center;
+	text-align: center;
+	  display: flex;
+	  margin-bottom: 20px;
+  
+  }
+  #footer .social-item{
+	margin: 7px;
+	border-radius: 50%;
+	overflow: hidden;
+  }
+  #footer p {
+	text-align: center;
+	  color: white;
+	  font-size: 18px;
+  }
+  footer h1{
+	color: white;
+  }
+  /*END OF FOOTER SECTION*/
+  
+  @media (min-width: 576px) {
+	*{
+		justify-content: center;
+	}
+	.card{
+		justify-content: center;
+		display: block;
+		justify-items: center;
+		margin-left: 20%;
+	}
+  }

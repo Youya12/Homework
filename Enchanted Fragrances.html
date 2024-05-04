@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pacifico">
+    <title>Enchanted Fragrances</title>
+    <link rel="icon" href="imgs/ICON6.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <!--Navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+            <div class="container-fluid">
+                <img src="imgs/ICON5.png" width="40" height="40" class="d-inline-block align-top" alt="Enchanted Fragrances">
+                <a class="navbar-brand" href="#">Enchanted Fragrances</a>
+                <button onclick="navToggle()" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <button id="language" onclick="switchLanguage()"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" style="fill: rgb(255, 255, 255);transform: ;msFilter:;"><path d="M15 4h7v2h-7zm1 4h6v2h-6zm2 4h4v2h-4zM9.307 4l-6 16h2.137l1.875-5h6.363l1.875 5h2.137l-6-16H9.307zm-1.239 9L10.5 6.515 12.932 13H8.068z"></path></svg></button>
+                        <button id="mybut" onclick="toggleTheme()"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" style="fill: rgb(255, 255, 255);transform: ;msFilter:;"><path d="M16 6H8c-3.296 0-5.982 2.682-6 5.986v.042A6.01 6.01 0 0 0 8 18h8a6.01 6.01 0 0 0 6-5.994v-.018C21.985 8.685 19.297 6 16 6zm-8 9c-1.627 0-3-1.373-3-3s1.373-3 3-3 3 1.373 3 3-1.373 3-3 3z"></path></svg></button>
+                        <button id="mysecondbut" onclick="toggleTheme()"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" style="fill: rgb(0, 0, 0);transform: ;msFilter:;"><path d="M16 6H8c-3.296 0-5.982 2.682-6 5.986v.042A6.01 6.01 0 0 0 8 18h8c3.309 0 6-2.691 6-6s-2.691-6-6-6zm0 9c-1.627 0-3-1.373-3-3s1.373-3 3-3 3 1.373 3 3-1.373 3-3 3z"></path></svg></button>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#hero">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#overview">ABOUT FRAGRANCES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#products">OUR PRODUCTS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">CONTACT US</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!--End of navbar-->
+    </header>
+    <main>
+        <!--Hero section-->
+        <section id="hero" style="background-image: url('imgs/Flowers4.jpg');">
+            <div class="hero container">
+                <div class="texttoshow">
+                    <h1>Enchanted Fragrances</h1>
+                    <h3>Where scents become spells</h3>
+                    <a href="#ShopNow" type="button" class="cta">Shop Now</a>
+                </div>
+                <div id="mySwitch">
+                    <button onclick="switchImg()" id="lefty" >
+                        <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 24 24" style="fill: rgb(255, 255, 255);transform: ;msFilter:;"><path d="M10.707 17.707 16.414 12l-5.707-5.707-1.414 1.414L13.586 12l-4.293 4.293z"></path></svg>
+                    </button>
+                    <button onclick="switchImg()" id="righty">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 24 24" style="fill: rgb(255, 255, 255);transform: ;msFilter:;"><path d="M13.293 6.293 7.586 12l5.707 5.707 1.414-1.414L10.414 12l4.293-4.293z"></path></svg>
+                </div>
+            </div>
+        </section>
+        <!--End of Hero section-->
+
+        <section id="originalSection">
+            <!--Overview section-->
+        <section id="overview">
+            <div class="container overview">
+                <div class="row">
+                    <div class="col-md-7 col-sm-6">
+                        <h4><span>About Fragrances</span></h4>
+                        <p>Perfumes have been an integral part of human culture for centuries, dating back to ancient
+                            civilizations.
+                            They are crafted from a blend of aromatic compounds, natural extracts, and synthetic chemicals,
+                            creating
+                            a unique fragrance that can evoke memories, emotions, and sensations.</p>
+                        <br>
+                        <h4><span>History and Origins</span></h4>
+                        <p>The art of perfume-making can be traced back to ancient Mesopotamia and Egypt, where fragrances
+                            were used
+                            for religious ceremonies, burial rituals, and personal adornment. The use of perfumes spread to
+                            ancient
+                            Greece and Rome, where they became symbols of luxury and status.</p>
+                    </div>
+                    <div class="col-md-5 col-sm-6">
+                        <img src="imgs/Assorted perfume bottles.jpg" alt="perfume" class="img-fluid">
+                    </div>
+                </div><br>
+                <div class="row">
+                    <div class="col-md-3 col-sm-6">
+                        <img src="imgs/wheel2.png" alt="Fragrance Wheel" class="img-fluid">
+                    </div>
+                    <div class="col-md-9 col-sm-6">
+                        <h4><span>Composition and Types</span></h4>
+                        <p>Perfumes are composed of several layers of <b>notes</b>, including top notes (the initial
+                            impression),
+                            middle notes (the heart of the fragrance), and base notes (the lasting impression). They are
+                            classified
+                            into several <b>categories</b> based on their concentration of aromatic compounds, including
+                            <i>parfum </i>25-40% (the most concentrated),<i> eau de parfum </i>15-25%, <i>eau de toilette
+                            </i>
+                            5-15%,
+                            and <i> eau de cologne </i>3-5%.
+                        </p>
+                        <p>Perfumes are more than just a pleasant fragrance; they are a reflection of our identity, style,
+                            and
+                            personality. Whether used for personal pleasure, social etiquette, or cultural tradition,
+                            perfumes
+                            continue to play a significant role in our lives, connecting us to our past and enriching our
+                            present
+                            experiences.
+                            Check our selection below and pick the best suited fragrance for you.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+            <!--End of Overview section-->
+    
+            <!--Products section-->
+        <section id="products">
+            <div class="container products">
+                <div class="row">
+                    <h3><span>Fragrances With <i>Floral</i> Notes:</span></h3>
+                    <div class="col">
+                        <div class="card" style="width: 18rem;">
+                            <img src="imgs/j'adore dio.jpg" class="card-img-top" alt="Dior J'adore">
+                            <div class="card-body">
+                                <h5 class="card-title">Christian Dior - J'Adore </h5>
+                                <p class="card-text">Eau de Parfum EDP, 100 ml Spray.</p>
+                                <p>A blend of floral notes, including jasmine, rose, and magnolia. It is 
+                                    a fresh and elegant fragrance that is perfect for everyday wear., leaving a lasting impression,
+                                     as captivating as a golden sunbeam. </p>
+                                <a href="#" class="btn btn-primary">Shop Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card" style="width: 18rem;">
+                            <img src="imgs/Chanel 5.jpg" class="card-img-top" alt="Chanel 5">
+                            <div class="card-body">
+                                <h5 class="card-title">Chanel - N°5</h5>
+                                <p class="card-text"><p>Eau de Parfum EDP, 100 ml Spray.</p>
+                                <p>This legendary perfume features a complex blend of
+                                     floral notes, including rose, ylang-ylang, and jasmine, with a touch of aldehydes for a unique
+                                      and unforgettable scent.</p>
+                                <a href="#" class="btn btn-primary">Shop Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card" style="width: 18rem;">
+                            <img src="imgs/my burburry.jpg" class="card-img-top" alt="My Burberry">
+                            <div class="card-body">
+                                <h5 class="card-title">My Burberry -Black</h5>
+                                <p class="card-text">Parfum P, 90 ml Spray.</p>
+                                <p>The iconic rose note at the heart of My Burberry fragrances is given a sweet and inviting candied
+                                      twist, while rich amber patchouli rounds off the scent, for a deep and captivating finish.</p>
+                                <a href="#" class="btn btn-primary">Shop Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <h3><span>Fragrances With <i>Orietal</i> Notes:</span></h3>
+                    <div class="col">
+                        <div class="card" style="width: 18rem;">
+                            <img src="imgs/tom.jpg" class="card-img-top" alt="Tom Ford Black Orchid">
+                            <div class="card-body">
+                                <h5 class="card-title">Tom Ford -Black Orchid</h5>
+                                <p class="card-text">Eau de Parfum EDP, 100 ml Spray.</p>
+                                    <p>An intoxicating blend of darkness and desire. Black Orchid unfolds with the rich, earthy 
+                                        aroma of truffle and plum, followed by a heart of intoxicating black orchid and floral 
+                                        whispers of rose and jasmine. Creamy vanilla and warm sandalwood anchor the fragrance, 
+                                        leaving a trail of opulent mystery.</p>
+                                <a href="#" class="btn btn-primary">Shop Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card" style="width: 18rem;">
+                            <img src="imgs/Guerlin.jpg" class="card-img-top" alt="Guerlain Shalimar">
+                            <div class="card-body">
+                                <h5 class="card-title">Guerlain -Shalimar</h5>
+                                <p class="card-text">Eau de Parfum EDP, 100 ml Spray.</p>
+                                <p>A legendary fragrance steeped in history and romance. Shalimar opens with a burst of citrus and
+                                     bergamot, leading to a heart of rich iris, powdery rose, and warm vanilla. The base unfolds 
+                                     with the depth of incense, opoponax, and tonka bean, creating a truly unforgettable oriental 
+                                     masterpiece.</p>
+                                <a href="#" class="btn btn-primary">Shop Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card" style="width: 18rem;">
+                            <img src="imgs/Gypsy water.jpg" class="card-img-top" alt="Gypsy Water">
+                            <div class="card-body">
+                                <h5 class="card-title">BYREDO -Gypsy Water</h5>
+                                <p class="card-text">Eau de Parfum EDP, 100 ml Spray.</p>
+                                <p>An evocative fragrance that captures the spirit of free-spirited adventure. It opens 
+                                    with a fresh and invigorating citrus accord, followed by a heart of smoky birch, woody vetiver,
+                                     and powdery orris root. The base of warm amber and peppery incense adds a touch of mystery and
+                                      intrigue.</p>
+                                <a href="#" class="btn btn-primary">Shop Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <h3><span>Fragrances With <i>Woody</i> Notes:</span></h3>
+                    <div class="col">
+                        <div class="card" style="width: 18rem;">
+                            <img src="imgs/terre.png" class="card-img-top" alt="Terre Hermes">
+                            <div class="card-body">
+                                <h5 class="card-title">Hèrmès -Terre</h5>
+                                <p class="card-text">Eau de toilette EDT, 100 ml Spray.</p>
+                                <p>Terre d'Hermès opens with a vibrant burst of citrus
+                                     and grapefruit, leading to a heart of earthy clary sage and peppery geranium. The base unfolds
+                                      with the warmth of cedarwood, vetiver, and the smoky sensuality of elemi resin, creating a 
+                                      truly sophisticated and masculine scent.</p>
+                                <a href="#" class="btn btn-primary">Shop Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card" style="width: 18rem;">
+                            <img src="imgs/Narciso Rodriguez.jpg" class="card-img-top" alt="Narciso Rodriguez">
+                            <div class="card-body">
+                                <h5 class="card-title">Narciso Rodriguez -for Him Bleu Noir</h5>
+                                <p class="card-text">Eau de Parfum EDP, 100 ml Spray.</p>
+                                <p>Bleu Noir opens with a cool and 
+                                    elegant blend of cardamom and nutmeg, leading to a heart of rich ebony wood and powdery
+                                     iris. The base unfolds with the warmth of musk and amber, creating a deeply sensual and
+                                      intimate fragrance that lingers on the skin.</p>
+                                <a href="#" class="btn btn-primary">Shop Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card" style="width: 18rem;">
+                            <img src="imgs/tom ford wood.jpg" class="card-img-top" alt="Tom Ford Wood">
+                            <div class="card-body">
+                                <h5 class="card-title">Tom Ford -Oud Wood</h5>
+                                <p class="card-text">Eau de Parfum EDP, 100 ml Spray.</p>
+                                <p> The heart of Oud Wood unfolds with 
+                                    the warmth of exotic spices, like cinnamon, nestled against creamy sandalwood, softened by
+                                     a whisper of rose. The base reveals a touch of leathery elegance, laced with vetiver and 
+                                     whispers of vanilla, leaving a lingering trail of sophisticated mystery.</p>
+                                <a href="#" class="btn btn-primary">Shop Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <h3><span>Fragrances With <i>Fresh</i> Notes:</span></h3>
+                    <div class="col">
+                        <div class="card" style="width: 18rem;">
+                            <img src="imgs/Gucci flora.jpg" class="card-img-top" alt="Gucci Flora">
+                            <div class="card-body">
+                                <h5 class="card-title">Gucci -Flora Gorgeous Gardenia</h5>
+                                <p class="card-text">Eau de Parfum EDP, 100 ml Spray.</p>
+                                <p>A whimsical garden fragrance housed in a vibrant floral porcelain bottle. Pear and green 
+                                    leaves mingle with intoxicating gardenia, leaving a captivatingly sweet and fresh trail.</p>
+                                <a href="#" class="btn btn-primary">Shop Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card" style="width: 18rem;">
+                            <img src="imgs/Guerlain aqua.jpg" class="card-img-top" alt="Guerlain Aqua">
+                            <div class="card-body">
+                                <h5 class="card-title">Guerlain -Aqua Allegoria Pampleulune</h5>
+                                <p class="card-text">Eau de Toilette EDT, 75 ml Spray.</p>
+                                <p>A burst of sunshine in a beehive bottle. Pamplelune opens with a sparkling spritz of juicy
+                                     grapefruit and invigorating bergamot, leaving a refreshingly citrusy and joyful trail.</p>
+                                <a href="#" class="btn btn-primary">Shop Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card" style="width: 18rem;">
+                            <img src="imgs/miss dior.jpg" class="card-img-top" alt="Miss Dior">
+                            <div class="card-body">
+                                <h5 class="card-title">Dior -Miss Dior Blooming Bouquet</h5>
+                                <p class="card-text">Eau de Parfum EDT, 100 ml Spray.</p>
+                                <p>Miss Dior is a vibrant floral bouquet captured in a stunning pink bow bottle. Sparkling citrus opens to 
+                                    delicate peony and rose, leaving a playfully sophisticated trail, perfect for everyday use.</p>
+                                <a href="#" class="btn btn-primary">Shop Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+            <!--End of products section-->
+    
+            <!--Contact section-->
+            <section id="contact">
+            <div class="container contact">
+                <div class="textarea">
+                    <h3><span>Stay Updated</span></h3>
+                <p>Sign up to receive the latest offers and promotions</p>
+                <div class="row">
+                    <div class="col">
+                        <div class="input-group textfield">
+                            <textarea class="form-control" aria-label="With textarea" placeholder="Enter Your Email Address"></textarea>
+                            <button class="btn btn-outline-secondary" type="button">SUBSCRIBE</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+            <!--End of contact section-->
+        </section>
+
+    <!--translated section-->
+<section id="translatedSection">
+      <section id="overview2">
+        <div class="container overview">
+            <div class="row">
+                <div class="col-md-7 col-sm-6">
+                    <h4><span>A propos des fragrance</span></h4>
+                    <p>Les parfums font partie intégrante de la culture humaine depuis des siècles.
+                        civilisations anciennes.
+                        Ils sont fabriqués à partir d'un mélange de composés aromatiques, d'extraits naturels et de produits chimiques synthétiques,
+                        créant
+                        Ils créent un parfum unique qui peut évoquer des souvenirs, des émotions et des sensations.</p>
+                    <br>
+                    <h4><span>Histoire et Origine</span></h4>
+                    <p>L'art de la parfumerie remonte à la Mésopotamie et à l'Égypte antiques, où les parfums
+                        étaient utilisées
+                        pour les cérémonies religieuses, les rituels funéraires et l'ornementation personnelle. L'usage des parfums s'est répandu dans l
+                        l'Antiquité
+                        L'utilisation des parfums s'est répandue dans la Grèce et la Rome antiques, où ils sont devenus des symboles de luxe et de statut.</p>
+                </div>
+                <div class="col-md-5 col-sm-6">
+                    <img src="imgs/Assorted perfume bottles.jpg" alt="perfume" class="img-fluid">
+                </div>
+            </div><br>
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <img src="imgs/wheel2.png" alt="Fragrance Wheel" class="img-fluid">
+                </div>
+                <div class="col-md-9 col-sm-6">
+                    <h4><span>Composition et Types</span></h4>
+                    <p>Les parfums sont composés de plusieurs couches de <b>notes</b>, notes de tête (l'impression initiale),
+                        les notes de cœur (le cœur du parfum) et les notes de fond (l'impression durable). Elles sont
+                        classées
+                        en plusieurs <b>categories</b>sur la base de leur concentration en composés aromatiques, notamment
+                        <i>parfum </i>25-40% (les plus concentrés),<i> eau de parfum </i>15-25%, <i>eau de toilette
+                        </i>
+                        5-15%,
+                        et <i> eau de cologne </i>3-5%.
+                    </p>
+                    <p>Les parfums sont plus qu'une simple odeur agréable ; ils sont le reflet de notre identité, de notre style,
+                        et de
+                        personnalité. Qu'ils soient utilisés pour le plaisir personnel, l'étiquette sociale ou la tradition culturelle, les parfums sont le reflet de notre identité, de notre style et de notre personnalité,
+                        parfums
+                        continuent à jouer un rôle important dans nos vies, nous reliant à notre passé et enrichissant notre présent.
+                        présent.
+                        expériences actuelles.
+                        Consultez notre sélection ci-dessous et choisissez le parfum qui vous convient le mieux.</p>
+                </div>
+            </div>
+        </div>
+        <!--Products section-->
+        <section id="products">
+            <div class="container products">
+                <div class="row">
+                    <h3><span>Fragrances avec  des notes <i>Floral</i></span></h3>
+                    <div class="col">
+                        <div class="card" style="width: 18rem;">
+                            <img src="imgs/j'adore dio.jpg" class="card-img-top" alt="Dior J'adore">
+                            <div class="card-body">
+                                <h5 class="card-title">Christian Dior - J'Adore </h5>
+                                <p class="card-text">Eau de Parfum EDP, 100 ml Spray.</p>
+                                <p>Un mélange de notes florales, dont le jasmin, la rose et le magnolia. Il s'agit d'un parfum frais et élégant, parfait pour être porté au quotidien. 
+                                    un parfum frais et élégant, parfait pour le quotidien, qui laisse une impression durable,
+                                     aussi captivant qu'un rayon de soleil doré. </p>
+                                <a href="#" class="btn btn-primary">Acheter</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card" style="width: 18rem;">
+                            <img src="imgs/Chanel 5.jpg" class="card-img-top" alt="Chanel 5">
+                            <div class="card-body">
+                                <h5 class="card-title">Chanel - N°5</h5>
+                                <p class="card-text"><p>Eau de Parfum EDP, 100 ml Spray.</p>
+                                <p>Ce parfum légendaire est un mélange complexe de notes florales, dont la rose, l'ylang-ylang et le jasmin.
+                                    de notes florales, dont la rose, l'ylang-ylang et le jasmin, avec une touche d'aldéhydes pour un parfum unique et inoubliable.
+                                     unique et inoubliable.</p>
+                                <a href="#" class="btn btn-primary">Acheter</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card" style="width: 18rem;">
+                            <img src="imgs/my burburry.jpg" class="card-img-top" alt="My Burberry">
+                            <div class="card-body">
+                                <h5 class="card-title">My Burberry -Black</h5>
+                                <p class="card-text">Parfum P, 90 ml Spray.</p>
+                                <p>La note de rose emblématique au cœur des parfums My Burberry se pare d'une touche sucrée et invitante, tandis que le riche patchouli ambré complète le parfum, pour un final profond et captivant.
+                                    tandis que le riche patchouli ambré complète le parfum, pour un final profond et captivant.</p>
+                                <a href="#" class="btn btn-primary">Acheter</a>
+                            </div>
+                        </div>
+                    </div>
+                </div><br>
+                <div class="row">
+                    <h3><span>Fragrances avec des notes <i>Oriental</i></span></h3>
+                    <div class="col">
+                        <div class="card" style="width: 18rem;">
+                            <img src="imgs/tom.jpg" class="card-img-top" alt="Tom Ford Black Orchid">
+                            <div class="card-body">
+                                <h5 class="card-title">Tom Ford -Black Orchid</h5>
+                                <p class="card-text">Eau de Parfum EDP, 100 ml Spray.</p>
+                                    <p>Un mélange enivrant de noirceur et de désir. Black Orchid s'ouvre sur l'arôme riche et terreux de la truffe et de la prune. 
+                                        de truffe et de prune, suivi d'un cœur d'orchidée noire enivrante et de murmures floraux 
+                                        de rose et de jasmin. La vanille crémeuse et le bois de santal chaud ancrent le parfum, 
+                                        laissant un sillage de mystère opulent.</p>
+                                <a href="#" class="btn btn-primary">Acheter</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card" style="width: 18rem;">
+                            <img src="imgs/Guerlin.jpg" class="card-img-top" alt="Guerlain Shalimar">
+                            <div class="card-body">
+                                <h5 class="card-title">Guerlain -Shalimar</h5>
+                                <p class="card-text">Eau de Parfum EDP, 100 ml Spray.</p>
+                                <p>Un parfum légendaire imprégné d'histoire et de romantisme. Shalimar s'ouvre sur une explosion d'agrumes et de bergamote.
+                                    bergamote, menant à un cœur d'iris riche, de rose poudrée et de vanille chaude. Le fond se déploie 
+                                    avec la profondeur de l'encens, de l'opoponax et de la fève tonka, créant un chef-d'œuvre oriental inoubliable. 
+                                    chef-d'œuvre.</p>
+                                <a href="#" class="btn btn-primary">Acheter</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card" style="width: 18rem;">
+                            <img src="imgs/Gypsy water.jpg" class="card-img-top" alt="Gypsy Water">
+                            <div class="card-body">
+                                <h5 class="card-title">BYREDO -Gypsy Water</h5>
+                                <p class="card-text">Eau de Parfum EDP, 100 ml Spray.</p>
+                                <p>Un parfum évocateur qui capture l'esprit d'aventure libre. Il s'ouvre 
+                                    sur un accord d'agrumes frais et vivifiant, suivi d'un cœur de bouleau fumé, de vétiver boisé et de racine d'orris poudrée,
+                                     et de racine d'orris poudrée. Le fond d'ambre chaud et d'encens poivré ajoute une touche de mystère et d'intrigue.
+                                      de mystère et d'intrigue.</p>
+                                <a href="#" class="btn btn-primary">Acheter</a>
+                            </div>
+                        </div>
+                    </div>
+                </div><br>
+                <div class="row">
+                    <h3><span>Fragrances avec des notes <i>Woody</i></span></h3>
+                    <div class="col">
+                        <div class="card" style="width: 18rem;">
+                            <img src="imgs/terre.png" class="card-img-top" alt="Terre Hermes">
+                            <div class="card-body">
+                                <h5 class="card-title">Hèrmès -Terre</h5>
+                                <p class="card-text">Eau de toilette EDT, 100 ml Spray.</p>
+                                <p>Terre d'Hermès s'ouvre sur un éclat vibrant d'agrumes et de pamplemousse, puis sur un cœur de sauge sclarée et de géranium poivré.
+                                    et de pamplemousse, menant à un cœur de sauge sclarée et de géranium poivré. Le fond se déploie
+                                     la chaleur du bois de cèdre, du vétiver et la sensualité fumée de la résine d'élémi, créant un parfum vraiment sophistiqué et masculin. 
+                                     un parfum vraiment sophistiqué et masculin.</p>
+                                <a href="#" class="btn btn-primary">Acheter</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card" style="width: 18rem;">
+                            <img src="imgs/Narciso Rodriguez.jpg" class="card-img-top" alt="Narciso Rodriguez">
+                            <div class="card-body">
+                                <h5 class="card-title">Narciso Rodriguez -for Him Bleu Noir</h5>
+                                <p class="card-text">Eau de Parfum EDP, 100 ml Spray.</p>
+                                <p>Bleu Noir s'ouvre sur un mélange frais et élégant de cardamome et de noix de muscade. 
+                                    de cardamome et de noix de muscade, menant à un cœur de bois d'ébène riche et d'iris poudré.
+                                     poudré. Le fond se déploie avec la chaleur du musc et de l'ambre, créant un parfum profondément sensuel et intime qui persiste sur la peau.
+                                      sensuelle et intime qui persiste sur la peau.</p>
+                                <a href="#" class="btn btn-primary">Acheter</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card" style="width: 18rem;">
+                            <img src="imgs/tom ford wood.jpg" class="card-img-top" alt="Tom Ford Wood">
+                            <div class="card-body">
+                                <h5 class="card-title">Tom Ford -Oud Wood</h5>
+                                <p class="card-text">Eau de Parfum EDP, 100 ml Spray.</p>
+                                <p> Le cœur de Oud Wood se déploie avec 
+                                    la chaleur d'épices exotiques, comme la cannelle, nichée dans un santal crémeux, adouci par un murmure de rose.
+                                     par un murmure de rose. Le fond révèle une touche d'élégance cuirée, agrémentée de vétiver et d'un soupçon de vanille. 
+                                     de vanille, laissant un sillage de mystère sophistiqué.</p>
+                                <a href="#" class="btn btn-primary">Acheter</a>
+                            </div>
+                        </div>
+                    </div>
+                </div><br>
+                <div class="row">
+                    <h3><span>Fragrances avec des notes <i>Fresh</i></span></h3>
+                    <div class="col">
+                        <div class="card" style="width: 18rem;">
+                            <img src="imgs/Gucci flora.jpg" class="card-img-top" alt="Gucci Flora">
+                            <div class="card-body">
+                                <h5 class="card-title">Gucci -Flora Gorgeous Gardenia</h5>
+                                <p class="card-text">Eau de Parfum EDP, 100 ml Spray.</p>
+                                <p>Un parfum de jardin fantaisiste dans un flacon de porcelaine floral et vibrant. La poire et les feuilles vertes 
+                                    se mêlent au gardénia enivrant, laissant un sillage captivant, doux et frais.</p>
+                                <a href="#" class="btn btn-primary">Acheter</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card" style="width: 18rem;">
+                            <img src="imgs/Guerlain aqua.jpg" class="card-img-top" alt="Guerlain Aqua">
+                            <div class="card-body">
+                                <h5 class="card-title">Guerlain -Aqua Allegoria Pampleulune</h5>
+                                <p class="card-text">Eau de Toilette EDT, 75 ml Spray.</p>
+                                <p>Une explosion de soleil dans un flacon en forme de ruche. Pamplelune s'ouvre sur un pschitt pétillant de pamplemousse juteux et de bergamote vivifiante.
+                                    de pamplemousse juteux et de bergamote vivifiante, laissant un sillage rafraîchissant, citronné et joyeux.</p>
+                                <a href="#" class="btn btn-primary">Acheter</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card" style="width: 18rem;">
+                            <img src="imgs/miss dior.jpg" class="card-img-top" alt="Miss Dior">
+                            <div class="card-body">
+                                <h5 class="card-title">Dior -Miss Dior Blooming Bouquet</h5>
+                                <p class="card-text">Eau de Parfum EDT, 100 ml Spray.</p>
+                                <p>Miss Dior est un bouquet floral vibrant capturé dans un superbe flacon rose. Les agrumes pétillants s'ouvrent sur la pivoine et la rose 
+                                    à la pivoine et à la rose délicates, laissant un sillage ludique et sophistiqué, parfait pour un usage quotidien.</p>
+                                <a href="#" class="btn btn-primary">Acheter</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+            <!--End of products section-->
+    </section>
+    <!--Contact section-->
+    <section id="contact">
+        <div class="container contact">
+            <div class="textarea">
+                <h3><span>Restez à jour!</span></h3>
+            <p>Inscrivez-vous pour recevoir les dernières offres et promotions</p>
+            <div class="row">
+                <div class="col">
+                    <div class="input-group textfield">
+                        <textarea class="form-control" aria-label="With textarea" placeholder="Enter Your Email Address"></textarea>
+                        <button class="btn btn-outline-secondary" type="button">S'ABONNER</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+        <!--End of contact section-->
+</section>
+    </main>
+        <!--Footer-->
+    <footer>    
+        <section id="footer">
+        <div class="footer container">
+            <div class="brand">
+                <h2>Enchanted Fragrances</h2>
+            </div>
+            <p>Follow Us</p>
+            <div class="social-icon">
+                <div class="social-item">
+                    <a href="https://www.facebook.com/Yasmiine.Belarbi" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="white" class="bi bi-facebook" viewBox="0 0 16 16">
+                      <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+                    </svg></a>
+                </div>
+                <div class="social-item">
+                    <a href="https://www.instagram.com/yasmine__belarbi/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="white" class="bi bi-instagram" viewBox="0 0 16 16">
+                      <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+                    </svg></a>
+                </div>
+                <div class="social-item">
+                    <a href="https://www.linkedin.com/in/yasmine-belarbi-12052000/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="white" class="bi bi-linkedin" viewBox="0 0 16 16">
+                      <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
+                    </svg></a>
+                </div>
+            </div>
+            <a href="">Privacy Policy  </a>|<a href="">  Terms & Conditions  </a>|<a href="">  Cookie Policy</a>
+            <p><small>Copyright © 2024 Enchanted Fragrances. All rights reserved</small></p>
+        </div>
+    </section>
+</footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
